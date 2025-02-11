@@ -5,11 +5,15 @@ import (
 	"log"
 	"net/http"
 
+	"github.com/charlstg09/finanzas-api/migrations"
+
 	"github.com/gin-gonic/gin"
 )
 
 func main() {
 	fmt.Println("hola mundo")
+
+	migrations.ConectarBaseDeDatos()
 
 	r := gin.Default()
 
