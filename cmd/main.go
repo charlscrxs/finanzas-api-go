@@ -6,6 +6,7 @@ import (
 	"net/http"
 
 	"github.com/charlstg09/finanzas-api/migrations"
+	"github.com/charlstg09/finanzas-api/routes"
 
 	"github.com/gin-gonic/gin"
 )
@@ -16,6 +17,10 @@ func main() {
 	migrations.ConectarBaseDeDatos()
 
 	r := gin.Default()
+
+	routes.CategoriasRoutes(r)
+	routes.MovimientosRoutes(r)
+	routes.UsuariosRoutes(r)
 
 	r.GET("/", func(c *gin.Context) {
 		c.JSON(http.StatusOK, gin.H{"mensaje": "servidor corriendo"})
