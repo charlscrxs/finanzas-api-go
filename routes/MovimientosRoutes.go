@@ -2,16 +2,23 @@ package routes
 
 import (
 	"github.com/charlstg09/finanzas-api/controllers"
+	"github.com/charlstg09/finanzas-api/middleware"
 	"github.com/gin-gonic/gin"
 )
 
 func MovimientosRoutes(r *gin.Engine) {
-	r.GET("/movimientos", controllers.GetMovimientos)
-	r.GET("/movimientos/:id", controllers.GetMovimientosPorId)
 
-	r.POST("/movimientos", controllers.PostMovimientos)
-	r.PUT("/movimientos/:id", controllers.PutMovimientos)
+	auth := r.Group("movimientos")
 
-	r.DELETE("/movimientos/:id", controllers.DeleteMovimientos)
+	auth.Use(middleware.AuthMiddleware())
+	{
+		auth.GET("/", controllers.GetMovimientos)
+		auth.GET("/:id", controllers.GetMovimientosPorId)
+
+		auth.POST("/", controllers.PostMovimientos)
+		auth.PUT("/:id", controllers.PutMovimientos)
+
+		auth.DELETE("/:id", controllers.DeleteMovimientos)
+	}
 
 }
