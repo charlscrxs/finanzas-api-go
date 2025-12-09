@@ -1,4 +1,4 @@
-module github.com/charlstg09/finanzas-api
+module github.com/charlscrxs/finanzas-api
 
 go 1.23.5
 

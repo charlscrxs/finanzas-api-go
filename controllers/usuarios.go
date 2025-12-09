@@ -4,9 +4,9 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/charlstg09/finanzas-api/middleware"
-	"github.com/charlstg09/finanzas-api/migrations"
-	"github.com/charlstg09/finanzas-api/models"
+	"github.com/charlscrxs/finanzas-api/middleware"
+	"github.com/charlscrxs/finanzas-api/migrations"
+	"github.com/charlscrxs/finanzas-api/models"
 	"github.com/gin-gonic/gin"
 	"github.com/golang-jwt/jwt/v5"
 	"golang.org/x/crypto/bcrypt"

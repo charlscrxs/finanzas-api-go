@@ -3,8 +3,8 @@ package controllers
 import (
 	"net/http"
 
-	"github.com/charlstg09/finanzas-api/migrations"
-	"github.com/charlstg09/finanzas-api/models"
+	"github.com/charlscrxs/finanzas-api/migrations"
+	"github.com/charlscrxs/finanzas-api/models"
 	"github.com/gin-gonic/gin"
 )
 

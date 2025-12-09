@@ -1,8 +1,8 @@
 package routes
 
 import (
-	"github.com/charlstg09/finanzas-api/controllers"
-	"github.com/charlstg09/finanzas-api/middleware"
+	"github.com/charlscrxs/finanzas-api/controllers"
+	"github.com/charlscrxs/finanzas-api/middleware"
 	"github.com/gin-gonic/gin"
 )
 

@@ -5,8 +5,8 @@ import (
 	"log"
 	"net/http"
 
-	"github.com/charlstg09/finanzas-api/migrations"
-	"github.com/charlstg09/finanzas-api/routes"
+	"github.com/charlscrxs/finanzas-api/migrations"
+	"github.com/charlscrxs/finanzas-api/routes"
 
 	"github.com/gin-gonic/gin"
 
