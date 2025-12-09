@@ -9,6 +9,7 @@ import (
 func UsuariosRoutes(r *gin.Engine) {
 
 	r.POST("/usuarios", controllers.PostUsuarios)
+	r.POST("/login", controllers.Login)
 
 	auth := r.Group("usuarios")
 	auth.Use(middleware.AuthMiddleware())

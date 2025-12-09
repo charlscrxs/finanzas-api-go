@@ -9,6 +9,13 @@ import (
 	"github.com/charlstg09/finanzas-api/routes"
 
 	"github.com/gin-gonic/gin"
+
+	// Swagger
+	_ "github.com/swaggo/files"
+	_ "github.com/swaggo/gin-swagger"
+
+	// Testify (para pruebas unitarias)
+	_ "github.com/stretchr/testify/assert"
 )
 
 func main() {
