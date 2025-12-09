@@ -16,13 +16,13 @@
 ## Instrucciones de Ejecución
 
 1. Clonar el repositorio:
-   git clone https://github.com/charlscrxs/finanzas-api-go.git
+git clone https://github.com/charlscrxs/finanzas-api-go.git
 
 2. Instalar dependencias:
-   go mod tidy
+go mod tidy
 
 3. Configuración:
-   Crear un archivo .env en la raíz del proyecto configurando las credenciales de la base de datos PostgreSQL (Host, User, Password, DB_Name, Port).
+Crear un archivo .env en la raíz del proyecto configurando las credenciales de la base de datos PostgreSQL (Host, User, Password, DB_Name, Port).
 
 4. Iniciar el servidor:
-   go run cmd/main.go
+go run cmd/main.go
